@@ -1,0 +1,20 @@
+{
+    "name":"BBM- BRING BACK MILLIONS",
+    "description":"Change Youtube Counts Back To Millions",
+    "manifest_version" : 2,
+    "version" : "0.1",
+    "content_scripts" :[{
+            "matches": ["<all_urls>"],
+            "include_globs": ["*://*youtube.com/*"],
+            "js" : ["script.js"]
+        }],
+    "permissions" : ["activeTab","tabs"],
+    "browser_action": {
+        "default_popup" : "popup.html"
+    },
+    "background" : [{
+        "js" : ["background.js"]
+    }]
+    
+
+}
