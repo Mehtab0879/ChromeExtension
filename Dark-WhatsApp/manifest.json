@@ -2,7 +2,7 @@
     "name":"Dark - WhatsApp ",
     "description":"Changes WhatsApp Theme To Dark Mde",
     "manifest_version" : 2,
-    "version" : "0.1",
+    "version" : "0.2",
     "content_scripts" :[{
             "matches": ["<all_urls>"],
             "include_globs": ["*://*web.whatsapp.com/*"],
